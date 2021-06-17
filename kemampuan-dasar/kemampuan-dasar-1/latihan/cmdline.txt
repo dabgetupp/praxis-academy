@@ -1,0 +1,117 @@
+open /Applications/Safari.app/
+ls ~ | pbcopy
+pbcopy < blogpost.txt
+curl http://www.google.com/doodles#oodles/archive | grep -A5 'latest-doodle on' | grep 'img src' | sed s/.*'<img src="\/\/'/''/ | sed s/'" alt=".*'/''/ | pbcopy
+pbpaste >> tasklist.txt
+mdfind -onlyin ~/Documents essay
+screencapture -C -M image.png
+screencapture -c -W
+screencapture -T 10 -P image.png
+screencapture -s -t pdf image.pdf
+sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
+~/Library/LaunchAgents    
+/Library/LaunchAgents          
+/Library/LaunchDaemons
+/System/Library/LaunchAgents
+/System/Library/LaunchDaemons
+say "Never trust a computer you can't lift."
+say -f mynovel.txt -o myaudiobook.aiff
+Macbooks-MacBook-Air:~ Prastowoteguh$ cd
+Macbooks-MacBook-Air:~ Prastowoteguh$ ls
+Applications		Movies			devops_series
+Desktop			Music			get-pip.py
+Documents		Pictures		microservice-python
+Downloads		Public			myaudiobook.aiff
+Library			README.md
+Macbooks-MacBook-Air:~ Prastowoteguh$ open
+Usage: open [-e] [-t] [-f] [-W] [-R] [-n] [-g] [-h] [-s <partial SDK name>][-b <bundle identifier>] [-a <application>] [filenames] [--args arguments]
+Help: Open opens files from a shell.
+      By default, opens each file using the default application for that file.  
+      If the file is in the form of a URL, the file will be opened as a URL.
+Options: 
+      -a                Opens with the specified application.
+      -b                Opens with the specified application bundle identifier.
+      -e                Opens with TextEdit.
+      -t                Opens with default text editor.
+      -f                Reads input from standard input and opens with TextEdit.
+      -F  --fresh       Launches the app fresh, that is, without restoring windows. Saved persistent state is lost, excluding Untitled documents.
+      -R, --reveal      Selects in the Finder instead of opening.
+      -W, --wait-apps   Blocks until the used applications are closed (even if they were already running).
+          --args        All remaining arguments are passed in argv to the application's main() function instead of opened.
+      -n, --new         Open a new instance of the application even if one is already running.
+      -j, --hide        Launches the app hidden.
+      -g, --background  Does not bring the application to the foreground.
+      -h, --header      Searches header file locations for headers matching the given filenames, and opens them.
+      -s                For -h, the SDK to use; if supplied, only SDKs whose names contain the argument value are searched.
+                        Otherwise the highest versioned SDK in each platform is used.
+Macbooks-MacBook-Air:~ Prastowoteguh$ cp
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+Macbooks-MacBook-Air:~ Prastowoteguh$ touch
+usage:
+touch [-A [-][[hh]mm]SS] [-acfhm] [-r file] [-t [[CC]YY]MMDDhhmm[.SS]] file ...
+Macbooks-MacBook-Air:~ Prastowoteguh$ mkdir
+usage: mkdir [-pv] [-m mode] directory ...
+Macbooks-MacBook-Air:~ Prastowoteguh$ rmdir
+usage: rmdir [-p] directory ...
+Macbooks-MacBook-Air:~ Prastowoteguh$ rm -R
+usage: rm [-f | -i] [-dPRrvW] file ...
+       unlink file
+Macbooks-MacBook-Air:~ Prastowoteguh$ sudo
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user] [command]
+usage: sudo [-AbEHknPS] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user]
+            [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user] file
+            ...
+Macbooks-MacBook-Air:~ Prastowoteguh$ top
+Macbooks-MacBook-Air:~ Prastowoteguh$ q
+-bash: q: command not found
+Macbooks-MacBook-Air:~ Prastowoteguh$ top
+Macbooks-MacBook-Air:~ Prastowoteguh$ clear
+
+Macbooks-MacBook-Air:~ Prastowoteguh$ ditto
+Usage: ditto [ <options> ] src [ ... src ] dst
+
+    <options> are any of:
+    -h                         print full usage
+    -v                         print a line of status for each source copied
+    -V                         print a line of status for every file copied
+    -X                         do not descend into directories with a different device ID
+
+    -c                         create an archive at dst (by default CPIO format)
+    -x                         src(s) are archives
+    -z                         gzip compress CPIO archive
+    -j                         bzip2 compress CPIO archive
+    -k                         archives are PKZip
+    --keepParent               parent directory name src is embedded in dst_archive
+    --arch archVal             fat files will be thinned to archVal
+                               multiple -arch options can be specified
+                               archVal should be one of "ppc", "i386", etc
+    --bom bomFile              only objects present in bomFile are copied
+    --norsrc                   don't preserve resource data
+    --noextattr                don't preserve extended attributes
+    --noqtn                    don't preserve quarantine information
+    --noacl                    don't preserve ACLs
+    --sequesterRsrc            copy resources via polite directory (PKZip only)
+    --nocache                  don't use filesystem cache for reads/writes
+    --hfsCompression           compress files at destination if appropriate
+    --nopreserveHFSCompression don't preserve HFS+ compression when copying files
+    --zlibCompressionLevel num use compression level 'num' when creating a PKZip archive
+    --password                 request password for reading from encrypted PKZip archive
+Macbooks-MacBook-Air:~ Prastowoteguh$ whatis
+usage: whatis keyword ...
+Macbooks-MacBook-Air:~ Prastowoteguh$ man
+What manual page do you want?
+Macbooks-MacBook-Air:~ Prastowoteguh$ man "command"
+Macbooks-MacBook-Air:~ Prastowoteguh$ exit
+logout
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...97 completed.
+
+[Process completed]
+
